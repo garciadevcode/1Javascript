@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" >
+    <title>Campo de Batalla</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nabla&family=Rowdies&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>  
+        <audio autoplay src="./audio.mp3"></audio>      
+        <div class="img_principal">
+            <img src="./img/vendedor.jpg" alt="" >
+        </div>
+        <h1 class="titulo_principal">Bienvenido a esta Aventura</h1>      
+        <h2 class="titulo_secundario">Primero debes armar a tu Soldado</h2>
+
+        <div class="Botones">
+            <button class="boton boton1" onclick="comprar(salud)">Salud</button>
+            <button class="boton boton2" onclick="comprar(espada)">Agregar Espadas</button>
+            <button class="boton boton3" onclick="comprar(escudo)">Agregar Escudo</button>
+        </div>        
+
+        <div class="seccion">
+            <h1 class="Mis_elementos">Mis elementos</h1>
+
+            <div class="elementos_mochila">
+            <ul id="mis_elementos">
+                <!-- Aca cargaremos todos nuestros elementos -->
+            </ul>
+        </div>
+
+            <h1 class="oro_actual">Oro: <span id="oro"></span></h1>
+
+        </div>
+
+
+
+
+    </header>
+    <script src="app.js"></script>
+</body>
+</html>
